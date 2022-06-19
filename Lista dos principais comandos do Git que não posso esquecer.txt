@@ -1,0 +1,166 @@
+
+
+# COMANDOS GIT QUE NÃO POSSO ESQUECER !!!  😨
+
+
+
+## ⚙  CONFIGURANDO O GIT
+
+
+
+## 📌git congif
+
+
+
+A primeira coisa que você deve fazer quando instalar o Git é definir o seu nome de usuário e endereço de e-mail. Isso é importante porque todos os commits no Git utilizam essas informações, e está imutavelmente anexado nos commits que você realiza:
+
+`git config --global user.name "John Doe"`
+`git config --global user.email johndoe@example.com`
+
+###### **Nota**: Para ativar as cores nas respostas de comandos:
+
+`git config --global color.ui true`
+
+
+
+## ⚙  CRIANDO UM PROJETO
+
+
+
+## 📌git init
+
+
+
+Caso você esteja iniciando o monitoramento de um projeto existente com Git, você precisa ir para o diretório do projeto e digitar:
+
+`git init`
+
+Isso cria um novo subdiretório (oculto) chamado .git que contem todos os arquivos necessários de seu repositório — um esqueleto de repositório Git. Neste ponto, nada em seu projeto é monitorado.
+
+Caso você queira começar a controlar o versionamento dos arquivos existentes (diferente de um diretório vazio), você provavelmente deve começar a monitorar esses arquivos e fazer um commit inicial. Você pode realizar isso através do comando:
+
+`git commit -m`
+
+
+
+## 📌git clone	
+
+
+
+Você clona um repositório remoto com o comando:
+
+`git clone [url]`
+
+Ex: Clonando a biblioteca Git do Ruby chamada Grit: 
+
+`[git clone git://github.com/schacon/grit.git]`()
+
+
+
+## 🗂NAVEGANDO ENTRE PASTAS
+
+
+
+No git Bash utilizei o comando
+
+ `cd` 
+
+para entrar um uma determinada pasta. E para voltar em um nível o comando
+
+`cd ..`
+
+
+
+## 🧹 LIMPANDO O TERMINAL DO GIT
+
+
+
+Comando que limpa a tela do terminal do git.
+
+`Ctrl + L`
+
+
+
+## 🧭  NAVEGAÇÃO BÁSICA
+
+
+
+## 📌git add
+
+Quando um repositório é inicialmente clonado, todos os seus arquivos estarão monitorados e inalterados porque você simplesmente os obteve e ainda não os editou.
+
+Conforme você edita esses arquivos, o Git passa a vê-los como modificados, porque você os alterou desde seu último commit. Você seleciona esses arquivos modificados e então faz o commit de todas as alterações selecionadas e o ciclo se repete.
+
+###### **Nota**: O comando `git add *` é usado para adicionar arquivos novos e modificados do diretório atual. Já o comando `git add [nome do arquivo modificado ou novo]` é usado para adicionar arquivos novos e modificados mas não os deletados.
+
+
+
+## 📌git status
+
+
+
+Após o uso do comando `git add` ou `git add *`verifique se o Git já está monitorando a nova modificação através do comando
+
+`git status`
+
+O comando lhe mostra em qual branch(ramo ou ramificação) você se encontra. Vamos dizer que você adicione um novo arquivo em seu projeto, um simples arquivo **README**. Caso o arquivo não exista e você execute **git status**, você verá o arquivo não monitorado dessa forma:
+
+```
+On branch master
+Untracked files:
+(use "git add {file}..." to include in what will be committed)
+#
+README
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+Você pode ver que o seu novo arquivo **README** não está sendo monitorado, pois está listado sob o cabeçalho **"Untracked files"** na saída do comando status. Não monitorado significa basicamente que o Git está vendo um arquivo que não existia na última captura (commit); o Git não vai incluí-lo nas suas capturas de commit até que você o diga explicitamente que assim o faça. Ele faz isso para que você não inclua acidentalmente arquivos binários gerados, ou outros arquivos que você não têm a intenção de incluir. Digamos, que você queira incluir o arquivo **README**, portanto vamos começar a monitorar este arquivo.
+
+###### **Nota**: O comando `git diff *` é usado para você saber exatamente o que você alterou, não apenas quais arquivos foram alterados.
+
+###### Apesar do comando **`git status`** responder essas duas perguntas de maneira geral, o **`git diff`** <u>mostra as linhas exatas que foram adicionadas e removidas</u> — o patch, por assim dizer.
+
+###### Se você quer ver o que selecionou que irá no seu próximo commit, pode utilizar o comando `git diff --cached`.
+
+
+
+## 📌git commit
+
+[^commit]: expressão do inglês que em português significa *comprometer-se*. No contexto de ciência da computação, gerenciamento de dados e controle de versão, commit refere-se ao processo de tornar permanente um conjunto de alterações, ou seja, de efetivar as alterações. Um uso comum é a conclusão de uma transação.
+
+
+
+Quando realizamos alguma modificação (modicação de um arquivo existente ou inclusão de um novo arquivo) o Git passa a vê-los como modificados, porque você os alterou desde seu último commit mas não os monitora. Você seleciona esses arquivos modificados e então faz o commit de todas as alterações juntamente com uma mensagem de registro do usuário que descreve as mudanças para que o Git comece a monitora-lo. Segue o comando
+
+`git commit -m "mensagem de registro do usuário"`
+
+
+
+## 📤🌐📥Compartilhar e Atualizar Projetos
+
+
+
+## 📌git pull
+
+[^pull 📥]: expressão do inglês que em português significa *puxar*
+
+
+
+Incorpora as alterações de um repositório local para um repositório remoto no branch atual.
+
+`git pull`
+
+
+
+## 📌git push
+
+[^push 📤]: expressão do inglês que em português significa *empurrar*
+
+O `git push` é o comando em que você transfere commits a partir do seu repositório local para um repositório remoto. Para fazer isso, você executa
+
+ `git push [nome_do_repositório_remoto]` [nome_da_sua_branch_local], que vai tentar fazer que o **[nome_do_repositório_remoto]** receba a sua branch **[nome_da_sua_branch_local]** contendo todos seus commits com alterações. Por exemplo: `git push origin develop`
+
+
+
+[Comandos Git]: https://comandosgit.github.io/
+
