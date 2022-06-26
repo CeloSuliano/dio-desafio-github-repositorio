@@ -1,0 +1,28 @@
+# O QUE É O Git ?
+
+
+
+Em 2005, Linus Torvalds (o homem conhecido por criar o núcleo, ou kernel, do SO Linux) desenvolveu o GIT, que desde então tem sido ativamente mantido por Junio Hamano, um engenheiro de software japonês.
+
+Atualmente, o GIT é um dos mais famosos sistemas de controle de versão de código aberto e milhões de projetos no mundo inteiro o utilizam para seu controle de versão (incluindo projetos comerciais e de código aberto).
+
+O Git é totalmente grátis e pode ser instalado em Mac, Linux, Windows e Solaris. O passo a passo abaixo se propõe a fazer o download e instalação em SO Windows.
+
+
+
+## **1º Passo – Download**📥
+
+- **[Clique aqui para baixar](https://github.com/git-for-windows/git/releases/download/v2.36.1.windows.1/Git-2.36.1-64-bit.exe)** a versão mais recente ( **2.36.1** ) **de 64 bits** do **Git para Windows** . Esta é a versão mais recente[ mantida](https://git-for-windows.github.io/) . Foi lançado **há cerca de 1 mês** , em 2022-05-09.
+
+  
+
+## **2º Passo – Instalação**
+
+- Depois de baixado, clique duas vezes no arquivo para iniciar o assistente de instalação. Basta seguir as instruções na tela, clicando em **Next**. Ao término, clique em **Finish** para concluir com êxito a instalação.
+
+  ![git janela de instalação](https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2017/04/git-install-windows.png)
+
+
+
+## 
+

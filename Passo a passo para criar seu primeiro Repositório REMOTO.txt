@@ -1,0 +1,38 @@
+# Criando o Repositório
+
+
+
+Abra o [Github](https://github.com/), faça login com a sua conta e clique em *New* :
+
+![img](http://gabsferreira.com/content/images/2015/08/repository.png)
+
+Em seguida, basta colocar o nome e descrição do repositório que você está criando e clicar em *Create repository*:
+
+![img](http://gabsferreira.com/content/images/2015/08/create.png)
+
+Depois, aparecerá essa tela:
+
+![img](http://gabsferreira.com/content/images/2015/08/new.png)
+
+O repositório foi criado, só que ainda está vazio. Vamos enviar nossos arquivos para lá!
+
+# Inicializando um repositório na sua máquina
+
+Abra o Git Bash clicando com o botão direito sobre a pasta onde está o seu projeto: 
+
+![img](http://gabsferreira.com/content/images/2015/08/repo.png)
+
+Agora, quero transformar essa minha pasta em um **repositório Git**.
+Pra isso, basta digitar **`git init`** e dar enter:
+
+```
+$ git init
+Initialized empty Git repository in c:/Users/Gabriel/Posts/.git/
+```
+
+Ele está falando que iniciou um repositório vazio nessa pasta. Como eu sei que agora tenho um repositório nessa pasta?
+Se você abrir a pasta no *File Explorer* e configurar ele para mostrar os arquivos ocultos, verá que tem uma pasta a mais chamada **.git**:
+
+
+
+http://gabsferreira.com/criando-e-enviando-arquivos-para-seu-repositorio-no-github/
